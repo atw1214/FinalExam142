@@ -4,30 +4,20 @@
 public class Mammal {
     
 	// Class for Mammals     
-	private String color;     
-	private int partAge;     
-	private String partClass;
+	private String color;    
+	private String name;
 	private int age; 
 	// 1 = ears 2= arms 3 = fingers, etc.
 	
 	// Constructors     
-	public Mammal(String bodyColor, int string, String string2) {         
-	String partColor = bodyColor;
-	color = partColor;         
-	age = string;         
-	partClass = string2;     
-	}          
-	
-	public Mammal(String bodyColor, String string, String string2) {
-		// TODO Auto-generated constructor stub
-	}
-
-	public Mammal(String string, String string2) {
-		// TODO Auto-generated constructor stub
+	public Mammal(String Color, int Age, String Name) {
+	color = Color;         
+	age = Age;         
+	name = Name;     
 	}
 
 	public String toString() {         
-	  return "Part class: " + partClass + " is color " + color + "Age: " + age;
+	  return name + " is " + color + "and" + age + "years old.";
 	
 	
 	}          
@@ -35,24 +25,22 @@ public class Mammal {
 	// Accessors     
 	public String getColor() {         
 	  return color;     
-	}          
+	}
+	public int getAge() {
+		return age;
+	}
+	public String getName() {
+		return name;
+	}
 	// likewise for the other two          
 	// Mutators     
-	public void setColor1(Object red) {            
+	public void setColor(String newColor) { 
+		color = newColor;
 	}          
 	public void setAge(int newAge) {         
 	  age = newAge;     
+	}       
+	public void setName(String newName) {
+		name = newName;
 	}
-	public int getPartAge() {
-		return partAge;
-	}
-	public void setPartAge(int partAge) {
-		this.partAge = partAge;
-
-	}
-
-	public void setColor(Object red) {
-		// TODO Auto-generated method stub
-		
-	}               
 }

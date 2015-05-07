@@ -1,27 +1,27 @@
+import Mammal
 
-public class Human {
 
-	public Human() {
-
-	}
-
-	public static void main(String[] args) {
-
-		class Mammal {
-		    
-			// Class for Mammal     
-			private String color;     
-			private int partClass;
-			private int age; 
-			private int logic;
-			
-			public String toString() {         
-			return "Part class: " + partClass + " is color " + color + "Age: " + age + "logic" + logic;
-			
-			
-			}
+public class Human extends Mammal {
+    
+	private int iq;
+	
+	// Constructors     
+		public Human(String Color, int Age, String Name, int IQ) {         
+			super(Color, Age, Name);
+			iq = IQ;
 		}
 		
-	}	
+		public String toString() {
+			return this.getName() + " is " + this.getColor() + ", " + this.getAge() + "years old, and has an IQ of" + iq + ".";
+		}
 		
+	// Accessors
+		public int getIQ() {
+			return iq;
+		}
+		
+	// Mutators
+		public void setIQ(int newIQ) {
+			iq = newIQ;
+		}
 }
