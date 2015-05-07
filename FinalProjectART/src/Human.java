@@ -1,5 +1,3 @@
-import Mammal
-
 
 public class Human extends Mammal {
     
@@ -12,7 +10,7 @@ public class Human extends Mammal {
 		}
 		
 		public String toString() {
-			return this.getName() + " is " + this.getColor() + ", " + this.getAge() + "years old, and has an IQ of" + iq + ".";
+			return this.getName() + " is " + this.getColor() + ", " + this.getAge() + " years old, and has an IQ of " + iq + ".";
 		}
 		
 	// Accessors

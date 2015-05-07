@@ -17,7 +17,7 @@ public class Mammal {
 	}
 
 	public String toString() {         
-	  return name + " is " + color + "and" + age + "years old.";
+	  return name + " is " + color + " and " + age + " years old.";
 	
 	
 	}          
